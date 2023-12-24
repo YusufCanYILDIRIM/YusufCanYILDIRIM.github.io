@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px 0;
+    color: white;
+}
+
+section {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul li {
+    text-align: left;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.skill {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
+div.social i {
+    padding: 0 10px;
+    font-size: 50px;
+    color: #333;
+    transition: 0.4;
+}
+
+div.social i:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width:700px) {
+    .social a i {
+        font-size: 35px;
+    }
+}
