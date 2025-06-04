@@ -29,4 +29,4 @@
         @endif
     </div>
 </section>
-<hr class="m-0" />Profile::all();
+<hr class="m-0" />
