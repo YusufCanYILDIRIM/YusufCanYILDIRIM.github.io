@@ -3,6 +3,7 @@
         @if(isset($profile))
             <h1 class="mb-0">
                 {{ $profile->name }}
+                <br>
                 <span class="text-primary">{{ $profile->title }}</span>
             </h1>
             <div class="subheading mb-5">
