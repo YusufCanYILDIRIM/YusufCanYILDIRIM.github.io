@@ -13,3 +13,4 @@ Route::get('/', function () {
 });
 
 Route::get('/about', [App\Http\Controllers\ProfileController::class, 'show' ]);
+Route::get('/experience', [App\Http\Controllers\ExperienceController::class, 'show']);
