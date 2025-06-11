@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Profile;
+use App\Models\Education;
+use App\Models\Experience;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -9,13 +11,9 @@ use App\Models\Profile;
 
 Route::get('/', function () {
     $profile = Profile::latest()->first();
-    return view('index', compact('profile'));
+    $experiences = Experience::all();
+    $educations = Education::all();
+    return view('index', compact('profile', 'experiences', 'educations'));
 });
 
 Route::get('/about', [App\Http\Controllers\ProfileController::class, 'show' ]);
-
-Route::get('/', function () {
-    $profile = Profile::latest()->first();
-    $experiences = \App\Models\Experience::all(); // <-- Bunu ekle
-    return view('index', compact('profile', 'experiences')); // <-- experiences'ı da gönder
-});
