@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ExperienceSeeder::class,
             EducationSeeder::class,
             ProfileSeeder::class,
+            SkillSeeder::class,
         ]);
 
         
