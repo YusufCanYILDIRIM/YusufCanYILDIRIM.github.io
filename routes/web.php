@@ -13,4 +13,9 @@ Route::get('/', function () {
 });
 
 Route::get('/about', [App\Http\Controllers\ProfileController::class, 'show' ]);
-Route::get('/experience', [App\Http\Controllers\ExperienceController::class, 'show']);
+
+Route::get('/', function () {
+    $profile = Profile::latest()->first();
+    $experiences = \App\Models\Experience::all(); // <-- Bunu ekle
+    return view('index', compact('profile', 'experiences')); // <-- experiences'ı da gönder
+});
