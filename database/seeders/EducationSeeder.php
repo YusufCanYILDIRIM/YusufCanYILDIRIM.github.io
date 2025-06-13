@@ -16,7 +16,7 @@ class EducationSeeder extends Seeder
         Education::create([
             'school' => 'Anadolu Üniversitesi',
             'degree' => 'Lisans Programı',
-            'field' => 'CYönetim Bilişim Sistemleri',
+            'field' => 'Yönetim Bilişim Sistemleri',
             'start_date' => 'September 2023',
             'end_date' => 'Present',
         ]);
@@ -34,7 +34,7 @@ class EducationSeeder extends Seeder
             'degree' => 'Önlisans Programı',
             'field' => 'Bilgisayar Programcılığı',
             'start_date' => 'September 2021',
-            'end_date' => ' June 2023',
+            'end_date' => 'June 2023',
         ]);
     }
 }
