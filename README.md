@@ -1,4 +1,4 @@
-markdown name=README.md
+
 # Yusuf Can YILDIRIM - Kişisel Portfolyo
 
 Bu proje, yazılım geliştirme deneyimlerimi, eğitim geçmişimi ve ilgi alanlarımı sergilediğim kişisel portfolyo sitesidir.
